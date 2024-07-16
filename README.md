@@ -6,14 +6,15 @@
 # Code sample to extract Sec (EDGAR) 10-K Form Filing in TXT format.
 
 To run a sample
-1. Get access token - [sign-up](https://edatapole.com/profile) in www.eDataPole.com. Subscription is free and does not requred credit card information
+1. Get API CODE - [sign-up](https://edatapole.com/profile) in www.eDataPole.com. Subscription is free and does not requred credit card information
 2. download extract-sec-edgar-filing-sample.py sample code and place your token access. 
 
 ```python
-    # replace with your access code.
-    # You can find YOUR API KEY on 
+    # replace with your API CODE.
+    # You can find access code on 
     # https://www.eDataPole.com/profile paqe.
-    api_key="YOUR API KEY"
+    # or you can use a temporary demo api key is expiring on 9/15/2024 
+    # api_key="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjExMzc2MDcsImV4cCI6MTcyNjMyMTYwNywic3ViIjoiREVNTyJ9._ckRMgdDQL0wMjDwNmS4yHmwuoRd8U9uu7T7NDGg-Ow"
 ```
 
 3. run
