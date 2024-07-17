@@ -31,6 +31,9 @@ Sample code below shows REST API  request parameters usage and handling the resp
     ticker = "MMM"
     years_back = 2
     sections = "1,1A,7A"
+    #keywords - comma separated string of key words to filter out the content of selected sections. 
+    #Could include Regular expression. Or could be None
+    keywords ="PFAS manufacturing"
     json_response = extract_edgar_forms_txt(
         host, port, api_key, ticker, years_back, sections
     )

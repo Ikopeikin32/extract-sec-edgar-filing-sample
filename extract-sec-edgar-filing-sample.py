@@ -9,7 +9,9 @@ RSP_STATUS = "response_status"
 RSP_REASON = "response_reason"
 
 
-def extract_edgar_forms_txt(host, port, api_key, ticker, years_back, sections):
+def extract_edgar_forms_txt(
+    host, port, api_key, ticker, years_back, sections, keywords=None
+):
     """Extract  text section from 10-K SEC filing"""
     try:
 
@@ -21,6 +23,7 @@ def extract_edgar_forms_txt(host, port, api_key, ticker, years_back, sections):
             "ticker": ticker,
             "years_back": years_back,
             "sections": sections,
+            "keywords": keywords,
             "api_key": api_key,
         }
         params = "/api/messages/edgar_extract?" + urllib.parse.urlencode(query)
@@ -53,15 +56,18 @@ if __name__ == "__main__":
     api_key = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjExMzc2MDcsImV4cCI6MTcyNjMyMTYwNywic3ViIjoiREVNTyJ9._ckRMgdDQL0wMjDwNmS4yHmwuoRd8U9uu7T7NDGg-Ow"
     host = "edatapole.com"
     port = 80
+
+    # keywords = "3M also makes [a-z]* free of charge through its website,3M expended approximately $316,PFAS manufacturing"
+    keywords = None
     # host = "127.0.0.1"
     # port = 6060
     ticker = "MMM"
-    years_back = 2
-    sections = "1,1A,7A"
-    json_response = extract_edgar_forms_txt(
-        host, port, api_key, ticker, years_back, sections
-    )
+    years_back = 1
+    sections = "1A,7A"
 
+    json_response = extract_edgar_forms_txt(
+        host, port, api_key, ticker, years_back, sections, keywords
+    )
     print(json_response)
     if json_response[RSP_STATUS] != 200:
         print("Exception fetching data")
