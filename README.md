@@ -18,7 +18,7 @@ curl -v "http://edatapole.com/api/messages/edgar_extract?ticker=MMM&years_back=2
 
 [http://edatapole.com/api/messages/edgar_extract?ticker=MMM&years_back=2&sections=1A&api_key=YOUR_API_KEY](http://edatapole.com/api/messages/edgar_extract?ticker=MMM&years_back=2&sections=1A&api_key=YOUR_API_KEY)
 
-**Mapping  ticker to cik **
+**Mapping  ticker to cik**
 
 [http://edatapole.com/api/messages/edgar_get_cmp?ticker=MMM&api_key=YOUR_API_KEY](http://edatapole.com/api/messages/edgar_get_cmp?ticker=MMM&api_key=YOUR_API_KEY)
 
@@ -27,8 +27,8 @@ curl -v "http://edatapole.com/api/messages/edgar_extract?ticker=MMM&years_back=2
 [http://edatapole.com/api/messages/edgar_get_cmp?cik=66740&api_key=YOUR_API_KEY](http://edatapole.com/api/messages/edgar_get_cmp?cik=66740&api_key=YOUR_API_KEY)
 
 
-To run Python sample
-1. Get API CODE - [sign-up](https://edatapole.com/profile) in www.eDataPole.com. Subscription is free and does not requred credit card information
+**To run Python sample**
+1. **Get API CODE** - [sign-up](https://edatapole.com/profile) in www.eDataPole.com. ***Subscription is free*** and does not requred credit card information
 2. download extract-sec-edgar-filing-sample.py sample code and place your token access. 
 
 ```python
