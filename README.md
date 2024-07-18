@@ -15,9 +15,14 @@ Call with curl:
 curl -v "http://edatapole.com/api/messages/edgar_extract?ticker=MMM&years_back=2&sections=1A&api_key=YOUR_API_KEY"
 ```
 or just click the link
-[http://edatapole.com/api/messages/edgar_extract?ticker=MMM&years_back=2&sections=1A&api_key=eyJ0eXA....](http://edatapole.com/api/messages/edgar_extract?ticker=MMM&years_back=2&sections=1A&api_key=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjExMzc2MDcsImV4cCI6MTcyNjMyMTYwNywic3ViIjoiREVNTyJ9._ckRMgdDQL0wMjDwNmS4yHmwuoRd8U9uu7T7NDGg-Ow)
+[http://edatapole.com/api/messages/edgar_extract?ticker=MMM&years_back=2&sections=1A&api_key=YOUR_API_KEY](http://edatapole.com/api/messages/edgar_extract?ticker=MMM&years_back=2&sections=1A&api_key=YOUR_API_KEY)
 
+Mapping  ticker to cik 
+[http://edatapole.com/api/messages/edgar_extract?ticker=MMM&api_key=YOUR_API_KEY](http://edatapole.com/api/messages/edgar_extract?ticker=MMM&api_key=YOUR_API_KEY)
 
+Mapping  cik to ticker
+
+[http://edatapole.com/api/messages/edgar_extract?cik=66740&api_key=YOUR_API_KEY](http://edatapole.com/api/messages/edgar_extract?cik=66740&api_key=YOUR_API_KEY)
 
 
 To run Python sample
