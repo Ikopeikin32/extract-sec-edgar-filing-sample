@@ -3,9 +3,24 @@
     <img alt="alt_text" width="40px" src="favicon.ico" />  eDataPOle - Business Connect  https://edatapole.com/
 </p>
 
+
+
 # Code sample to extract Sec (EDGAR) 10-K Form Filing in TXT format.
 
-To run a sample
+
+
+```
+Call with curl:
+```curl
+curl -v "http://edatapole.com/api/messages/edgar_extract?ticker=MMM&years_back=2&sections=1A&api_key=YOUR_API_KEY"
+```
+or just click the link
+[http://edatapole.com/api/messages/edgar_extract?ticker=MMM&years_back=2&sections=1A&api_key=eyJ0eXA....](http://edatapole.com/api/messages/edgar_extract?ticker=MMM&years_back=2&sections=1A&api_key=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjExMzc2MDcsImV4cCI6MTcyNjMyMTYwNywic3ViIjoiREVNTyJ9._ckRMgdDQL0wMjDwNmS4yHmwuoRd8U9uu7T7NDGg-Ow)
+
+
+
+
+To run Python sample
 1. Get API CODE - [sign-up](https://edatapole.com/profile) in www.eDataPole.com. Subscription is free and does not requred credit card information
 2. download extract-sec-edgar-filing-sample.py sample code and place your token access. 
 
@@ -60,11 +75,6 @@ Sample code below shows REST API  request parameters usage and handling the resp
             )
             print(f"------ Extracted Sessions {sections} -----------")
             print(entity["data"])
-```
-Same call with curl:
-```curl
-curl -v "http://edatapole.com/api/messages/edgar_extract?ticker=MMM&years_back=2&sections=1A%2C7A&api_key=YOUR_API_KEY"
-```
 
 Below is the response sample:
 
