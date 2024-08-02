@@ -4,22 +4,22 @@
 
 # Code sample to extract Sec (EDGAR) 10-K, 3, 4, 5 , 8-K, 13f Form Filing and convert to csv format.
 
-**Form 10-K** is a comprehensive report filed annually by a publicly traded company about its financial performance.
-**Form 13F** is a quarterly report that is required to be filed by all institutional investment managers with at least $100 million in assets under management. It discloses their equity holdings and can provide insights into what the smart money is doing in the market.
-**Form 8-K** is a report of unscheduled material events or corporate changes at a company that could be of importance to the shareholders. Also known as a Form 8K, the report notifies the public of events, including acquisitions, bankruptcy, the resignation of directors, or changes in the fiscal year.
-**Form 3** is an Initial Statement of Beneficial Ownership of Securities.
-**Form 4** is a Statement of Changes in Beneficial Ownership .
-**Form 5** is an Annual Statement of Changes in Beneficial Ownership of Securities .
+- **Form 10-K** is a comprehensive report filed annually by a publicly traded company about its financial performance.
+- **Form 13F** is a quarterly report that is required to be filed by all institutional investment managers with at least $100 million in assets under management. It discloses their equity holdings and can provide insights into what the smart money is doing in the market.
+- **Form 8-K** is a report of unscheduled material events or corporate changes at a company that could be of importance to the shareholders. Also known as a Form 8K, the report notifies the public of events, including acquisitions, bankruptcy, the resignation of directors, or changes in the fiscal year.
+- **Form 3** is an Initial Statement of Beneficial Ownership of Securities.
+- **Form 4** is a Statement of Changes in Beneficial Ownership .
+- **Form 5** is an Annual Statement of Changes in Beneficial Ownership of Securities .
 
 ````
 Call with curl:
 ```curl
-curl -v "http://edatapole.com/api/messages/edgar_extract?ticker=AMD&months_back=2&sections=1A&api_key=YOUR_API_KEY"
+curl -v "http://edatapole.com/api/messages/edgar_extract?ticker=AMD&months_back=2&forms=10-K&sections=1A&api_key=YOUR_API_KEY"
 ````
 
 **Or just click the link to call EDGAR FILING extract REST API**
 
-[http://edatapole.com/api/messages/edgar_extract?ticker=MMM&years_back=2&sections=1A&api_key=YOUR_API_KEY](http://edatapole.com/api/messages/edgar_extract?ticker=MMM&years_back=2&sections=1A&api_key=YOUR_API_KEY)
+[http://edatapole.com/api/messages/edgar_extract?ticker=AMD&months_back=2&forms=10-K&sections=1A&api_key=YOUR_API_KEY](http://edatapole.com/api/messages/edgar_extract?ticker=AMD&months_back=2&forms=10-K&sections=1A&api_key=YOUR_API_KEY)
 
 **Mapping ticker to cik**
 
