@@ -11,8 +11,9 @@ if __name__ == "__main__":
     # this is a demo key with expiration on 9/15/24
     api_key = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjExNTIzNzQsImV4cCI6MTcyNjMzNjM3NCwic3ViIjoiYXV0aDB8NjY3YWEwMTQ1YjdiMmVkZjdmODc2ZTQ4In0.-wmcTCwYaT-0oWUdXUdU-1eT01qCXZzLx6dOnLKkYks"
 
-    # keywords = "3M also makes [a-z]* free of charge through its website,3M expended approximately $316,PFAS manufacturing"
-    keywords = None  # used only for 10-K
+    # keywords = "makes [a-z]* free of charge through its website, expended approximately $316"
+    #Request for Form Fetching Based on Regular Expression Matching ,Used only for 10-K .
+    keywords = None  
     ticker = "AMD"
     months_back = 12
     sections = "1A,7A"  # used only for 10-K

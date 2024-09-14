@@ -14,20 +14,20 @@
 ````
 Call with curl:
 ```curl
-curl -v "http://edatapole.com/api/messages/edgar_extract?ticker=AMD&months_back=2&forms=10-K&sections=1A&api_key=YOUR_API_KEY"
+curl -v "http://edatapole.com/api/messages/sec/edgar_extract?ticker=AMD&months_back=2&forms=10-K&sections=1A&api_key=YOUR_API_KEY"
 ````
 
 **Or just click the link to call EDGAR FILING extract REST API**
 
-[http://edatapole.com/api/messages/edgar_extract?ticker=AMD&months_back=2&forms=10-K&sections=1A&api_key=YOUR_API_KEY](http://edatapole.com/api/messages/edgar_extract?ticker=AMD&months_back=2&forms=10-K&sections=1A&api_key=YOUR_API_KEY)
+[http://edatapole.com/api/messages/sec/edgar_extract?ticker=AMD&months_back=2&forms=10-K&sections=1A&api_key=YOUR_API_KEY](http://edatapole.com/api/messages/sec/edgar_extract?ticker=AMD&months_back=2&forms=10-K&sections=1A&api_key=YOUR_API_KEY)
 
 **Mapping ticker to cik**
 
-[http://edatapole.com/api/messages/edgar_get_cmp?ticker=MMM&api_key=YOUR_API_KEY](http://edatapole.com/api/messages/edgar_get_cmp?ticker=MMM&api_key=YOUR_API_KEY)
+[http://edatapole.com/api/messages/sec/edgar_get_cmp?ticker=MMM&api_key=YOUR_API_KEY](http://edatapole.com/api/sec/messages/edgar_get_cmp?ticker=MMM&api_key=YOUR_API_KEY)
 
 **Mapping cik to ticker**
 
-[http://edatapole.com/api/messages/edgar_get_cmp?cik=66740&api_key=YOUR_API_KEY](http://edatapole.com/api/messages/edgar_get_cmp?cik=66740&api_key=YOUR_API_KEY)
+[http://edatapole.com/api/messages/sec/edgar_get_cmp?cik=66740&api_key=YOUR_API_KEY](http://edatapole.com/api/messages/sec/edgar_get_cmp?cik=66740&api_key=YOUR_API_KEY)
 
 **To run Python sample**
 

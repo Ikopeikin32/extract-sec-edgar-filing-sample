@@ -32,7 +32,7 @@ class edgar_data_request:
                 "forms": forms,
                 "api_key": access_token,
             }
-            params = "/api/messages/edgar_extract?" + urllib.parse.urlencode(query)
+            params = "/api/messages/sec/edgar_extract?" + urllib.parse.urlencode(query)
 
             print(params)
             conn.request("GET", params)
@@ -73,9 +73,8 @@ class edgar_data_request:
                 "forms": forms,
                 "api_key": access_token,
             }
-            params = "/api/messages/edgar_extract?" + urllib.parse.urlencode(query)
+            params = "/api/messages/sec/edgar_extract?" + urllib.parse.urlencode(query)
             print(params)
-            # This will send a request to the server using the HTTP request GET method /api/messages/bsns?st=...& after=...&new=...
             conn.request("GET", params)  # , headers=headers)
             response = conn.getresponse()
             data = response.read()
